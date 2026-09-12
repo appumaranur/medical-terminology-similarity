@@ -122,6 +122,28 @@ python main.py
 python ui.py
 ```
 
+## Deploy on Render
+
+The repository includes `render.yaml`, so Render can configure the service automatically.
+
+1. Push the project to GitHub.
+2. In Render, choose **New +** and then **Blueprint**.
+3. Connect `appumaranur/medical-terminology-similarity`.
+4. Confirm the service from `render.yaml` and click **Apply**.
+
+Render will install `requirements.txt`, start Gunicorn, bind the service to its assigned `PORT`, and use `/api/health` for health checks. The first deployment downloads and loads the Sentence-BERT model, so the initial startup can take several minutes. The free plan may sleep when idle and reload the model on the next request cycle.
+
+If you create the service manually instead, use:
+
+```text
+Runtime: Python 3
+Build command: pip install -r requirements.txt
+Start command: gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 2 --timeout 180 app:app
+Health check path: /api/health
+```
+
+This project is intentionally configured with one worker because each worker would load a separate copy of the Transformer model into memory.
+
 ## Dataset
 
 `data/medical_terms.csv` contains 136 unique terms in categories such as Cardiology, Neurology, Respiratory, Endocrinology, Nephrology, Gastroenterology, Infectious Diseases, Orthopedics, Urology, and Common Conditions. Each row contains:
