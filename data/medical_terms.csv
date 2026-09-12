@@ -1,0 +1,139 @@
+term,category,description,related_terms,relation_type
+myocardial infarction,Cardiology,"Damage to heart muscle caused by reduced blood flow.","heart attack|cardiac infarction",Primary term
+acute myocardial infarction,Cardiology,"A sudden blockage that damages heart muscle.","myocardial infarction|heart attack",Equivalent term
+heart attack,Cardiology,"Common name for an acute myocardial infarction.","myocardial infarction|cardiac infarction",Equivalent term
+cardiac infarction,Cardiology,"Death of heart muscle tissue from interrupted blood supply.","myocardial infarction|heart attack",Equivalent term
+coronary artery disease,Cardiology,"Narrowing or blockage of arteries that supply the heart.","coronary heart disease|angina",Related term
+coronary heart disease,Cardiology,"Disease affecting the heart's coronary blood vessels.","coronary artery disease|angina pectoris",Equivalent term
+angina pectoris,Cardiology,"Chest discomfort caused by reduced blood flow to the heart.","chest pain|coronary artery disease",Related term
+hypertension,Cardiology,"Persistently elevated pressure in the arteries.","high blood pressure",Primary term
+high blood pressure,Cardiology,"Everyday term for hypertension.","hypertension",Equivalent term
+hypotension,Cardiology,"Blood pressure that is lower than the usual healthy range.","low blood pressure|dizziness",Primary term
+low blood pressure,Cardiology,"Everyday term for hypotension.","hypotension",Equivalent term
+arrhythmia,Cardiology,"An irregular or abnormal heartbeat rhythm.","irregular heartbeat|cardiac dysrhythmia",Primary term
+irregular heartbeat,Cardiology,"A heartbeat that is too fast, slow, or uneven.","arrhythmia",Related term
+heart failure,Cardiology,"A condition in which the heart cannot pump enough blood.","congestive heart failure|cardiac insufficiency",Primary term
+congestive heart failure,Cardiology,"Heart failure associated with fluid buildup.","heart failure|cardiac insufficiency",Equivalent term
+cardiac arrest,Cardiology,"Sudden loss of effective heart activity.","heart stoppage|resuscitation",Primary term
+cardiomyopathy,Cardiology,"Disease of the heart muscle that affects pumping.","heart muscle disease",Primary term
+deep vein thrombosis,Cardiology,"A blood clot in a deep vein, often in a leg.","DVT|venous thrombosis",Primary term
+venous thrombosis,Cardiology,"Formation of a clot in a vein.","deep vein thrombosis|DVT",Related term
+peripheral artery disease,Cardiology,"Reduced blood flow in arteries outside the heart and brain.","PAD|poor circulation",Primary term
+diabetes mellitus,Endocrinology,"A group of conditions involving high blood glucose.","diabetes|high blood sugar",Primary term
+diabetes,Endocrinology,"Common short name for diabetes mellitus.","diabetes mellitus",Equivalent term
+type 2 diabetes,Endocrinology,"Diabetes in which the body does not use insulin effectively.","adult-onset diabetes|diabetes mellitus",Related term
+type 1 diabetes,Endocrinology,"Diabetes in which the body produces little or no insulin.","juvenile diabetes|diabetes mellitus",Related term
+hyperglycemia,Endocrinology,"An abnormally high level of glucose in the blood.","high blood sugar",Primary term
+high blood sugar,Endocrinology,"Everyday description of hyperglycemia.","hyperglycemia|diabetes",Equivalent term
+hypoglycemia,Endocrinology,"An abnormally low level of glucose in the blood.","low blood sugar",Primary term
+low blood sugar,Endocrinology,"Everyday description of hypoglycemia.","hypoglycemia",Equivalent term
+insulin resistance,Endocrinology,"Reduced response of cells to insulin.","metabolic resistance|type 2 diabetes",Related term
+metabolic syndrome,Endocrinology,"A cluster of metabolic risk factors occurring together.","insulin resistance|obesity",Related term
+thyroid disease,Endocrinology,"A condition affecting thyroid hormone production or control.","thyroid disorder|goiter",Primary term
+hypothyroidism,Endocrinology,"The thyroid does not produce enough hormone.","underactive thyroid|thyroid disease",Primary term
+hyperthyroidism,Endocrinology,"The thyroid produces more hormone than the body needs.","overactive thyroid|thyroid disease",Primary term
+goiter,Endocrinology,"Enlargement of the thyroid gland.","thyroid swelling|thyroid disease",Related term
+osteoporosis,Orthopedics,"A condition that makes bones weak and more likely to fracture.","weak bones|bone loss",Primary term
+weak bones,Orthopedics,"Everyday phrase often used for reduced bone strength.","osteoporosis|bone loss",Related term
+osteoarthritis,Orthopedics,"Wear-related disease affecting joints and cartilage.","degenerative joint disease|joint wear",Primary term
+degenerative joint disease,Orthopedics,"Common name for osteoarthritis.","osteoarthritis|joint wear",Equivalent term
+rheumatoid arthritis,Orthopedics,"An immune-related disease causing joint inflammation.","inflammatory arthritis|joint inflammation",Primary term
+joint inflammation,Orthopedics,"Swelling and irritation in a joint.","arthritis|rheumatoid arthritis",Related term
+fracture,Orthopedics,"A break or crack in a bone.","broken bone|bone break",Primary term
+broken bone,Orthopedics,"Everyday term for a fracture.","fracture|bone break",Equivalent term
+sprain,Orthopedics,"Injury to a ligament caused by stretching or tearing.","ligament injury|twisted joint",Primary term
+strain,Orthopedics,"Injury to a muscle or tendon caused by overstretching.","muscle injury|pulled muscle",Primary term
+herniated disk,Orthopedics,"A spinal disk pushes through a weakened outer layer.","slipped disk|disc prolapse",Primary term
+slipped disk,Orthopedics,"Common term for a herniated spinal disk.","herniated disk|disc prolapse",Equivalent term
+gout,Orthopedics,"A form of arthritis associated with uric acid crystals.","gouty arthritis|joint inflammation",Primary term
+scoliosis,Orthopedics,"A sideways curvature of the spine.","curved spine|spinal curvature",Primary term
+cerebrovascular accident,Neurology,"Brain injury caused by interrupted or bleeding blood flow.","stroke|brain attack",Primary term
+stroke,Neurology,"Common term for a cerebrovascular accident.","cerebrovascular accident|brain attack",Equivalent term
+ischemic stroke,Neurology,"Stroke caused by a blocked blood vessel in the brain.","cerebral infarction|stroke",Related term
+brain attack,Neurology,"Informal term sometimes used for a stroke.","stroke|cerebrovascular accident",Equivalent term
+hemorrhagic stroke,Neurology,"Stroke caused by bleeding in or around the brain.","brain hemorrhage|stroke",Related term
+migraine,Neurology,"A neurological condition often causing recurring severe headaches.","severe headache|migraine attack",Primary term
+severe headache,Neurology,"Intense pain in the head that can have several causes.","migraine|head pain",Related term
+epilepsy,Neurology,"A neurological disorder involving recurrent unprovoked seizures.","seizure disorder",Primary term
+seizure disorder,Neurology,"Another term for a condition involving repeated seizures.","epilepsy|seizure",Equivalent term
+seizure,Neurology,"A sudden burst of abnormal electrical activity in the brain.","convulsion|epilepsy",Related term
+parkinson disease,Neurology,"A progressive disorder affecting movement and coordination.","Parkinsonism|movement disorder",Primary term
+multiple sclerosis,Neurology,"An immune-related disease affecting the central nervous system.","MS|demyelinating disease",Primary term
+dementia,Neurology,"A decline in memory and thinking that affects daily life.","cognitive decline|memory disorder",Primary term
+alzheimer disease,Neurology,"A progressive brain disorder causing memory and cognitive decline.","Alzheimer's|dementia",Related term
+meningitis,Neurology,"Inflammation of the protective membranes around the brain and spinal cord.","meningeal inflammation|brain infection",Related term
+pneumonia,Respiratory,"An infection that inflames air sacs in one or both lungs.","lung infection|pulmonary infection",Primary term
+lung infection,Respiratory,"General term for an infection affecting lung tissue.","pneumonia|pulmonary infection",Related term
+asthma,Respiratory,"A condition causing recurring narrowing and inflammation of airways.","bronchial asthma|reactive airway disease",Primary term
+bronchial asthma,Respiratory,"Another name for asthma affecting the bronchial tubes.","asthma|reactive airway disease",Equivalent term
+chronic obstructive pulmonary disease,Respiratory,"Long-term lung disease that limits airflow.","COPD|chronic lung disease",Primary term
+COPD,Respiratory,"Abbreviation for chronic obstructive pulmonary disease.","chronic obstructive pulmonary disease",Equivalent term
+bronchitis,Respiratory,"Inflammation of the tubes that carry air to the lungs.","inflammation of the bronchi|chest cold",Primary term
+inflammation of the bronchi,Respiratory,"Description of bronchial inflammation, commonly called bronchitis.","bronchitis|airway inflammation",Equivalent term
+common cold,Respiratory,"A mild viral infection of the upper respiratory tract.","cold|viral upper respiratory infection",Primary term
+influenza,Respiratory,"A contagious viral infection that affects the respiratory system.","flu|viral respiratory infection",Equivalent term
+sleep apnea,Respiratory,"Repeated pauses in breathing during sleep.","sleep disordered breathing|obstructive sleep apnea",Primary term
+obstructive sleep apnea,Respiratory,"Sleep apnea caused by repeated upper airway blockage.","sleep apnea|snoring disorder",Related term
+sinusitis,Respiratory,"Inflammation of the sinuses, often after an infection.","sinus infection|sinus inflammation",Primary term
+pleurisy,Respiratory,"Inflammation of the membranes around the lungs.","pleuritis|chest pain",Equivalent term
+renal failure,Nephrology,"The kidneys can no longer adequately remove waste from blood.","kidney failure|renal insufficiency",Primary term
+kidney failure,Nephrology,"Common term for renal failure.","renal failure|renal insufficiency",Equivalent term
+chronic kidney disease,Nephrology,"Long-term loss of kidney function.","CKD|kidney disease",Primary term
+kidney disease,Nephrology,"General term for a condition affecting the kidneys.","chronic kidney disease|renal disorder",Related term
+nephritis,Nephrology,"Inflammation of kidney tissue.","kidney inflammation|renal inflammation",Primary term
+kidney inflammation,Nephrology,"Everyday description of nephritis.","nephritis|renal inflammation",Equivalent term
+kidney stone,Nephrology,"A hard deposit that forms in the kidney or urinary tract.","renal calculus|urinary stone",Primary term
+renal calculus,Nephrology,"Clinical term for a kidney stone.","kidney stone|urinary stone",Equivalent term
+proteinuria,Nephrology,"An unusually high amount of protein in urine.","protein in urine|renal sign",Primary term
+glomerulonephritis,Nephrology,"Inflammation of the kidney's filtering units.","kidney inflammation|nephritis",Related term
+acute kidney injury,Nephrology,"A sudden decrease in kidney function.","AKI|acute renal failure",Primary term
+acute renal failure,Nephrology,"Older term for a sudden loss of kidney function.","acute kidney injury|renal failure",Related term
+urinary tract infection,Urology,"An infection in part of the urinary system.","UTI|bladder infection",Primary term
+UTI,Urology,"Abbreviation for urinary tract infection.","urinary tract infection|bladder infection",Equivalent term
+bladder infection,Urology,"An infection affecting the bladder, often a type of UTI.","UTI|cystitis",Related term
+cystitis,Urology,"Inflammation of the bladder, commonly caused by infection.","bladder infection|UTI",Related term
+urinary incontinence,Urology,"Unintentional leakage of urine.","loss of bladder control|incontinence",Primary term
+benign prostatic hyperplasia,Urology,"Noncancerous enlargement of the prostate gland.","BPH|enlarged prostate",Primary term
+enlarged prostate,Urology,"Common phrase for benign prostatic hyperplasia.","BPH|benign prostatic hyperplasia",Equivalent term
+prostatitis,Urology,"Inflammation of the prostate gland.","prostate inflammation",Primary term
+erectile dysfunction,Urology,"Difficulty getting or keeping an erection.","ED|impotence",Primary term
+hematuria,Urology,"Blood present in the urine.","blood in urine|urinary symptom",Primary term
+hepatitis,Gastroenterology,"Inflammation of the liver.","liver inflammation|viral hepatitis",Primary term
+liver inflammation,Gastroenterology,"Plain-language description of hepatitis.","hepatitis|hepatic inflammation",Equivalent term
+cirrhosis of the liver,Gastroenterology,"Long-term scarring that impairs liver function.","liver cirrhosis|liver scarring",Primary term
+liver scarring,Gastroenterology,"Common description of cirrhosis.","cirrhosis of the liver|hepatic fibrosis",Related term
+gastritis,Gastroenterology,"Inflammation of the stomach lining.","stomach inflammation|gastric inflammation",Primary term
+stomach inflammation,Gastroenterology,"Plain-language description of gastritis.","gastritis|gastric inflammation",Equivalent term
+appendicitis,Gastroenterology,"Inflammation of the appendix.","inflammation of the appendix|appendix infection",Primary term
+inflammation of the appendix,Gastroenterology,"Plain-language description of appendicitis.","appendicitis|appendix inflammation",Equivalent term
+gastroesophageal reflux disease,Gastroenterology,"A condition in which stomach contents flow back into the esophagus.","GERD|acid reflux",Primary term
+acid reflux,Gastroenterology,"Common phrase for reflux of stomach acid.","GERD|heartburn",Related term
+peptic ulcer,Gastroenterology,"An open sore in the stomach or upper intestine lining.","stomach ulcer|duodenal ulcer",Primary term
+irritable bowel syndrome,Gastroenterology,"A common disorder affecting bowel function and comfort.","IBS|irritable colon",Primary term
+inflammatory bowel disease,Gastroenterology,"A group of disorders involving chronic intestinal inflammation.","IBD|Crohn disease",Primary term
+Crohn disease,Gastroenterology,"A type of inflammatory bowel disease.","IBD|intestinal inflammation",Related term
+ulcerative colitis,Gastroenterology,"Inflammatory bowel disease affecting the colon and rectum.","IBD|colitis",Related term
+constipation,Gastroenterology,"Infrequent or difficult passage of stools.","bowel difficulty|irregular bowel movement",Primary term
+diarrhea,Gastroenterology,"Frequent loose or watery stools.","loose stools|bowel upset",Primary term
+sepsis,Infectious Diseases,"A severe whole-body response to an infection.","blood poisoning|systemic infection",Primary term
+systemic infection,Infectious Diseases,"An infection affecting multiple parts of the body.","sepsis|generalized infection",Related term
+tuberculosis,Infectious Diseases,"An infectious disease commonly affecting the lungs.","TB|mycobacterial infection",Primary term
+COVID-19,Infectious Diseases,"Respiratory illness caused by the SARS-CoV-2 virus.","coronavirus disease|SARS-CoV-2 infection",Primary term
+viral infection,Infectious Diseases,"An illness caused by a virus.","virus disease|viral illness",Primary term
+bacterial infection,Infectious Diseases,"An illness caused by bacteria.","bacterial disease|bacteriosis",Primary term
+malaria,Infectious Diseases,"A mosquito-borne infection caused by Plasmodium parasites.","malarial disease|parasitic infection",Primary term
+dengue fever,Infectious Diseases,"A mosquito-borne viral illness that can cause fever and body aches.","dengue|breakbone fever",Primary term
+measles,Infectious Diseases,"A contagious viral illness with fever and a characteristic rash.","rubeola|measles infection",Primary term
+chickenpox,Infectious Diseases,"A contagious viral illness with an itchy blistering rash.","varicella|varicella infection",Equivalent term
+common cold,Infectious Diseases,"A mild viral infection of the upper airways.","cold|viral infection",Related term
+anemia,Common Conditions,"A condition in which blood carries less oxygen than usual.","low hemoglobin|iron deficiency anemia",Primary term
+fever,Common Conditions,"A temporary rise in body temperature often associated with illness.","high temperature|pyrexia",Primary term
+fatigue,Common Conditions,"A feeling of tiredness or lack of energy.","tiredness|exhaustion",Primary term
+nausea,Common Conditions,"An unpleasant sensation that may precede vomiting.","queasiness|sickness",Primary term
+vomiting,Common Conditions,"Forceful emptying of stomach contents through the mouth.","emesis|being sick",Equivalent term
+dehydration,Common Conditions,"A condition caused by losing more fluid than the body replaces.","fluid loss|water deficiency",Primary term
+obesity,Common Conditions,"Excess body fat that may affect health.","high body weight|adiposity",Primary term
+insomnia,Common Conditions,"Difficulty falling asleep, staying asleep, or sleeping well.","sleep difficulty|sleep disorder",Primary term
+allergy,Common Conditions,"An immune response to a usually harmless substance.","hypersensitivity|allergic reaction",Primary term
+chest pain,Common Conditions,"Pain or discomfort felt in the chest area.","chest discomfort|angina",Symptom
+
