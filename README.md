@@ -18,7 +18,7 @@ Exact keyword matching can miss useful relationships such as `kidney failure` an
 ## Features
 
 - 136 medical terminology records across 10 categories.
-- Sentence-BERT model: `all-MiniLM-L6-v2`.
+- Sentence-BERT model: `paraphrase-MiniLM-L3-v2` by default (configurable with `EMBEDDING_MODEL`).
 - Normalized embeddings and FAISS inner-product search.
 - Top five results with percentage scores and progress bars.
 - Metadata cards with category, description, and relation type.
@@ -167,7 +167,7 @@ The repository includes `render.yaml`, so Render can configure the service autom
 3. Connect `appumaranur/medical-terminology-similarity`.
 4. Confirm the service from `render.yaml` and click **Apply**.
 
-Render will install `requirements.txt`, start Gunicorn, bind the service to its assigned `PORT`, and use `/api/health` for health checks. The first deployment downloads and loads the Sentence-BERT model, so the initial startup can take several minutes. The free plan may sleep when idle and reload the model on the next request cycle.
+Render will install `requirements.txt`, start Gunicorn, bind the service to its assigned `PORT`, and use `/api/health` for health checks. The first deployment downloads and loads the Sentence-BERT model, so the initial startup can take several minutes. The default `paraphrase-MiniLM-L3-v2` model and single Torch thread keep memory usage suitable for Render's free plan. The free plan may sleep when idle and reload the model on the next request cycle.
 
 If you create the service manually instead, use:
 
