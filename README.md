@@ -50,11 +50,47 @@ medical_terminology_similarity/
 │   ├── similarity_engine.py       # FAISS index and search
 │   └── tfidf_comparison.py        # Traditional baseline
 ├── templates/
-│   └── index.html                 # Dashboard markup
-└── static/
+│   └── index.html                 # Flask dashboard markup
+├── static/
     ├── css/style.css              # Responsive visual design
     └── js/script.js               # Search, cards, stats, and chart
+├── docs/                          # GitHub Pages static frontend
+│   ├── index.html
+│   ├── style.css
+│   └── script.js                  # Configurable Render API client
 ```
+
+## GitHub Pages Frontend and Render Backend
+
+The deployable architecture is:
+
+- **Frontend:** GitHub Pages (`docs/`)
+- **Backend:** Render (Flask API)
+- **ML Model:** Sentence-BERT
+- **Vector Search:** FAISS
+- **Traditional NLP:** TF-IDF
+
+The GitHub Pages frontend sends requests to the Render backend. Set `API_BASE_URL` near the top of `docs/script.js` to the public URL of your Render service if it differs from the default value.
+
+### Enable GitHub Pages
+
+1. Push the repository to GitHub.
+2. Open **GitHub Repository -> Settings -> Pages**.
+3. Under **Build and deployment**, choose **Deploy from branch**.
+4. Select branch **main** and folder **/docs**.
+5. Click **Save**.
+
+GitHub will provide a URL such as `https://USERNAME.github.io/REPOSITORY-NAME/`. The frontend uses relative asset paths, so it works from a repository subpath.
+
+### Test the deployed website
+
+1. Open the GitHub Pages URL after the deployment finishes.
+2. Confirm the status message says the backend is ready.
+3. Search for `heart attack` or use one of the example buttons.
+4. Confirm semantic results, similarity scores, badges, categories, descriptions, related terms, relation types, statistics, and the TF-IDF comparison appear.
+5. If the request fails, open the browser developer console and verify that `API_BASE_URL` matches the Render service URL and that `/api/health` responds.
+
+The Flask API enables CORS for `/api/*` so the GitHub Pages origin can call `/api/health` and `POST /api/search`. After pulling this change into Render, redeploy the backend so `Flask-Cors` is installed from `requirements.txt`.
 
 ## System Architecture
 

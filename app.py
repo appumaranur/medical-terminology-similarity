@@ -3,6 +3,7 @@
 from pathlib import Path
 
 from flask import Flask, jsonify, render_template, request
+from flask_cors import CORS
 
 from src.data_loader import load_medical_terms
 from src.embedding_model import create_embeddings, load_embedding_model
@@ -35,6 +36,7 @@ def similarity_badge(percentage: float) -> str:
 def create_app() -> Flask:
     """Create the Flask app and load reusable search resources once."""
     app = Flask(__name__)
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
     state = {
         "model": None,
         "index": None,

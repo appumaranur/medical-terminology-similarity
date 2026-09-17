@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical Terminology Similarity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Medical Terminology Similarity home">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span><strong>MedMatch</strong><small>Transformer NLP lab</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#results">Results</a>
+        <a href="#comparison">Comparison</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">Dark mode</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse-dot"></span> AI-POWERED MEDICAL TERMINOLOGY MATCHING</p>
+          <h1>Find similar medical terms <em>instantly.</em></h1>
+          <p class="hero-subtitle">Compare medical terminology using Transformer-based semantic embeddings, then see how traditional NLP measures up.</p>
+        </div>
+        <div class="hero-note"><span class="note-number">01</span><span>Search meaning,<br>not just spelling.</span></div>
+      </section>
+
+      <section class="search-panel" aria-label="Medical term search">
+        <div class="search-label"><span class="search-icon" aria-hidden="true">+</span><div><strong>Semantic search</strong><small>Try a term, synonym, or short phrase</small></div></div>
+        <div class="search-row">
+          <input id="queryInput" type="search" placeholder="Enter a medical term, e.g. myocardial infarction" autocomplete="off">
+          <button class="primary-button" id="searchButton" type="button"><span>Search</span><span aria-hidden="true">-&gt;</span></button>
+        </div>
+        <div class="example-row" aria-label="Example searches">
+          <span>Try:</span>
+          <button class="example-button" type="button" data-query="heart attack">Heart attack</button>
+          <button class="example-button" type="button" data-query="hypertension">Hypertension</button>
+          <button class="example-button" type="button" data-query="diabetes">Diabetes</button>
+          <button class="example-button" type="button" data-query="stroke">Stroke</button>
+          <button class="example-button" type="button" data-query="pneumonia">Pneumonia</button>
+          <button class="clear-button" id="clearButton" type="button">Clear search</button>
+        </div>
+        <p class="status-message" id="statusMessage" role="status">Checking backend connection...</p>
+      </section>
+
+      <section class="stats-grid" aria-label="Search statistics">
+        <article class="stat-card"><span class="stat-label">Total terms</span><strong id="totalTerms">-</strong><small>in the dataset</small></article>
+        <article class="stat-card"><span class="stat-label">Results found</span><strong id="resultsFound">-</strong><small>top semantic matches</small></article>
+        <article class="stat-card accent-card"><span class="stat-label">Best match</span><strong id="bestMatch">-</strong><small>highest similarity</small></article>
+        <article class="stat-card"><span class="stat-label">Average score</span><strong id="averageScore">-</strong><small>across top results</small></article>
+      </section>
+
+      <section class="content-section" id="results">
+        <div class="section-heading"><div><p class="eyebrow">SEMANTIC RESULTS</p><h2>Closest terminology</h2></div><span class="result-query" id="resultQuery">Awaiting a search</span></div>
+        <div class="empty-state" id="emptyState"><div class="empty-mark">+</div><h3>Your results will appear here</h3><p>Enter a medical term above to compare meaning across the dataset.</p></div>
+        <div class="result-grid" id="resultsGrid"></div>
+      </section>
+
+      <section class="analysis-grid" id="comparison">
+        <div class="panel chart-panel"><div class="section-heading compact"><div><p class="eyebrow">VISUAL BREAKDOWN</p><h2>Similarity by term</h2></div></div><div class="chart" id="similarityChart"><p class="muted-copy">Run a search to see the score distribution.</p></div></div>
+        <div class="panel comparison-panel"><div class="section-heading compact"><div><p class="eyebrow">BASELINE CHECK</p><h2>Transformer vs traditional NLP</h2></div></div><p class="panel-intro">Sentence-BERT captures contextual meaning. TF-IDF mostly rewards shared words.</p><div class="comparison-table-wrap"><table><thead><tr><th>Method</th><th>Best match</th><th>Score</th></tr></thead><tbody id="comparisonBody"><tr><td colspan="3" class="muted-cell">Run a search to compare methods.</td></tr></tbody></table></div></div>
+      </section>
+
+      <aside class="disclaimer"><strong>Educational project only.</strong> This system matches terminology for learning and demonstration. It does not provide medical diagnosis or medical advice.</aside>
+    </main>
+    <footer><span>MedMatch / Semantic similarity lab</span><span>Sentence-BERT + FAISS + TF-IDF</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
