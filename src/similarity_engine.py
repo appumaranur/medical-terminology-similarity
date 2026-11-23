@@ -1,7 +1,12 @@
 """FAISS-based semantic similarity search."""
 
+from cachetools import LRUCache
+
 import faiss
 import numpy as np
+
+# Cache up to 256 recent query embeddings by their text
+_query_cache: LRUCache = LRUCache(maxsize=256)
 
 
 def build_faiss_index(embeddings: np.ndarray) -> faiss.Index:
