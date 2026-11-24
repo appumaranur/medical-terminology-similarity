@@ -10,3 +10,5 @@ faiss-cpu==1.9.0
 gunicorn==23.0.0
 cachetools==5.5.0
 python-dotenv==1.0.1
+# torch is installed separately in render.yaml via CPU-only wheel
+# to avoid pulling the 2GB CUDA build on Render's free tier
